@@ -1,1 +1,38 @@
 /* Стилизация аккордеона */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.accordion__summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
+    display: none;
+}
+
+.accordion__item {
+    background: linear-gradient(0deg, #ACB5BD, #ACB5BD),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+
+    /* Rectangle */
+    box-sizing: border-box;
+    position: relative;
+    width: 730px;
+    height: 72px;
+
+    background: #FFFFFF;
+    /* Gray 3 */
+
+    border: 1px solid #ACB5BD;
+    border-radius: 8px;
+
+    /* p */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    color: #000000;
+}
+
+.accordion__item:last-child {
+    margin-bottom: 0;
+}
